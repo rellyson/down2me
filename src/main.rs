@@ -6,5 +6,5 @@ mod services;
 #[macro_use] extern crate rocket;
 
 fn main() {
-    rocket::ignite().mount("/", routes![routes::index]).launch();
+    rocket::ignite().mount("/", routes![routes::index, routes::healthcheck]).launch();
 }
