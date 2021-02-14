@@ -224,6 +224,7 @@ dependencies = [
  "rocket",
  "rocket_contrib",
  "serde",
+ "youtube_dl",
 ]
 
 [[package]]
@@ -1029,6 +1030,15 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "b5a972e5669d67ba988ce3dc826706fb0a8b01471c088cb0b6110b805cc36aed"
 
 [[package]]
+name = "wait-timeout"
+version = "0.2.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "9f200f5b12eb75f8c1ed65abd4b2db8a6e1b138a20de009dacee265a2498f3f6"
+dependencies = [
+ "libc",
+]
+
+[[package]]
 name = "walkdir"
 version = "2.3.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1109,6 +1119,18 @@ name = "yansi"
 version = "0.5.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "9fc79f4a1e39857fc00c3f662cbf2651c771f00e9c15fe2abc341806bd46bd71"
+
+[[package]]
+name = "youtube_dl"
+version = "0.6.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "c034a9a2a97acaed34bce00993c0d3ddb0b506b13df232fbad687d0fca77012a"
+dependencies = [
+ "log 0.4.14",
+ "serde",
+ "serde_json",
+ "wait-timeout",
+]
 
 [[package]]
 name = "zeroize"

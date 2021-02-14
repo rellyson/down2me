@@ -3,12 +3,12 @@ use rocket_contrib::json::Json;
 use rocket::response::Debug;
 use serde::{Serialize, Deserialize};
 
+use crate::services::youtube as ytb;
+
 #[derive(Serialize, Deserialize)]
 pub struct DefaultResponse {
   message: String,
 }
-
-// use crate::services::youtube as ytb;
 
 #[get("/healthcheck")]
 pub fn healthcheck() -> Result<Json<DefaultResponse>, Debug<io::Error>>{
