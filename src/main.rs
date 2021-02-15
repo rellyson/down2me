@@ -7,5 +7,5 @@ mod services;
 
 fn main() {
     rocket::ignite().mount("/", routes![infra::routes::index, infra::routes::healthcheck,
-    infra::routes::download_from_youtube]).launch();
+    infra::routes::video_download]).launch();
 }
