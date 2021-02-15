@@ -31,4 +31,6 @@ RUN rustup default nightly
 
 COPY . .
 
+EXPOSE 4000
+
 CMD [ "cargo", "run" ]
