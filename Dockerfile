@@ -28,7 +28,6 @@ RUN dpkg -i python3-pkg-resources.deb
 RUN dpkg -i youtube-dl.deb
     
 RUN rustup default nightly
-RUN cargo install cargo-watch
 
 COPY . .
 
