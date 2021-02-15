@@ -1,5 +1,7 @@
 # Down2Me - Media downloader
 
+#### Available at: https://down2me.herokuapp.com
+
 ## About the project
 
 This project aims to be a simple and effective media downloader. For now, it supports the major social network video download requests, such as Youtube, Twitter, Instagram, etc. The core process of the API transfer the requests received to youtube-dl package installed in the container, and this package responds with an object that contains the information about the video received in the request. All information about youtube-dl can be found in https://github.com/ytdl-org/youtube-dl.
@@ -10,7 +12,7 @@ This project aims to be a simple and effective media downloader. For now, it sup
 
 `GET /`
 
-    curl -i -H 'Accept: application/json' http://localhost:4000/
+    curl -i -H 'Accept: application/json' https://down2me.herokuapp.com/
 
 #### Response
 
@@ -29,7 +31,7 @@ This project aims to be a simple and effective media downloader. For now, it sup
 
 `POST /video/download`
 
-    curl -i -H 'Accept: application/json' POST http://0.0.0.0:4000/video/download --data '{"video_url":"http://video-link.com"}'
+    curl -i -H 'Accept: application/json' POST https://down2me.herokuapp.com/video/download --data '{"video_url":"http://video-link.com"}'
 
 #### Response
 

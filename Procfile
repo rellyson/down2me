@@ -1,0 +1,2 @@
+CONFIG_PORT=$PORT
+ROCKET_ENV=prod ./target/release/main
